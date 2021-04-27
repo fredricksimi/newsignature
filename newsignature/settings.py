@@ -12,7 +12,8 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 
 import os
 from pathlib import Path
-
+import dj_database_url
+import django_on_heroku
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -26,7 +27,7 @@ SECRET_KEY = 'z2%8j1k^+qg4u5p5@#3b8(1yf5nf2@o+2!y0&jif6v%i&-b-xd'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['stepwisesignature.herokuapp.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -50,6 +51,7 @@ INSTALLED_APPS = [
 SITE_ID = 1
 
 MIDDLEWARE = [
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -160,3 +162,10 @@ ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
 ACCOUNT_UNIQUE_EMAIL = True
 ACCOUNT_LOGOUT_ON_GET = True
 LOGIN_REDIRECT_URL = 'signature:home'
+
+
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+
+prod_db = dj_database_url.config(conn_max_age=500)
+DATABASES['default'].update(prod_db)
+django_on_heroku.settings(locals())
