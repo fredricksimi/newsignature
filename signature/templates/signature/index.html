@@ -1,0 +1,420 @@
+{% extends "signature/base.html" %}
+{% load static %}
+
+{% block content %}
+
+<div class="wrapper">
+  <div class="section section-hero section-shaped">
+    <div class="shape shape-style-1 shape-primary">
+      <span class="span-150"></span>
+      <span class="span-50"></span>
+      <span class="span-50"></span>
+      <span class="span-75"></span>
+      <span class="span-100"></span>
+      <span class="span-75"></span>
+      <span class="span-50"></span>
+      <span class="span-100"></span>
+      <span class="span-50"></span>
+      <span class="span-100"></span>
+    </div>
+    <div class="page-header">
+      <div class="container shape-container d-flex align-items-center py-lg">
+        <div class="col px-0">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-lg-6 text-center">
+              <!-- <img src="./assets/img/brand/logo.jpeg" style="width: 200px;" class="img-fluid"> -->
+              <h1 class="mb-0 text-white">Create an Amazing</h1>
+              <h1 class="mb-0 text-white">Email Signature.</h1>
+              <div class="btn-wrapper mt-5">
+                <a href="#potato" class="btn btn-lg btn-white btn-icon mb-3 mb-sm-0">
+                  <span class="btn-inner--text">Click here to START</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="separator separator-bottom separator-skew zindex-100">
+      <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
+      </svg>
+    </div>
+  </div>
+  <div class="section section-components" id="potato">
+    <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <!-- Tabs with icons -->
+            <div class="nav-wrapper">
+              <ul class="nav nav-pills nav-justified flex-column flex-md-row" id="tabs-icons-text" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link mb-sm-3 mb-md-0 active" id="tabs-icons-text-1-tab" data-toggle="tab" href="#tabs-icons-text-1" role="tab" aria-controls="tabs-icons-text-1" aria-selected="true">Details</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mb-sm-3 mb-md-0" id="tabs-icons-text-2-tab" data-toggle="tab" href="#tabs-icons-text-2" role="tab" aria-controls="tabs-icons-text-2" aria-selected="false">Socials</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mb-sm-3 mb-md-0" id="tabs-icons-text-3-tab" data-toggle="tab" href="#tabs-icons-text-3" role="tab" aria-controls="tabs-icons-text-3" aria-selected="false">Images</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mb-sm-3 mb-md-0" id="tabs-icons-text-3-tab" data-toggle="tab" href="#tabs-icons-text-4" role="tab" aria-controls="tabs-icons-text-4" aria-selected="false">Templates</a>
+                </li>
+              </ul>
+            </div>
+            <div class="card shadow">
+              <div class="card-body">
+                <div class="tab-content" id="myTabContent">
+                  <div class="tab-pane fade show active" id="tabs-icons-text-1" role="tabpanel" aria-labelledby="tabs-icons-text-1-tab">
+                      <div class="form-group">
+                          <input type="text" placeholder="names" id="form_names" class="form-control form-control-alternative" />
+                      </div>
+                      <div class="form-group">
+                          <input type="text" placeholder="company" id="form_company" class="form-control form-control-alternative" />
+                      </div>
+                      <div class="form-group">
+                          <input type="text" placeholder="Designation" id="form_designation" class="form-control form-control-alternative" />
+                        </div>
+                        <div class="form-group">
+                          <input type="text" placeholder="Department" id="form_department" class="form-control form-control-alternative" />
+                        </div>
+                        <div class="form-group">
+                          <input type="text" placeholder="Phone" id="form_phone" class="form-control form-control-alternative" />
+                        </div>
+                        <div class="form-group">
+                          <input type="text" placeholder="Email" id="form_email" class="form-control form-control-alternative" />
+                        </div>
+                        <div class="form-group">
+                          <input type="text" placeholder="Website" id="form_website" class="form-control form-control-alternative" />
+                        </div>
+                  </div>
+                  <div class="tab-pane fade" id="tabs-icons-text-2" role="tabpanel" aria-labelledby="tabs-icons-text-2-tab">
+                      <div class="form-group">
+                          <input type="text" id="form_linkedin" class="form-control form-control-alternative" id="linkedin" aria-describedby="linkedin"
+                              placeholder="https://linkedin.com/johnwick">
+                      </div>
+                      <div class="form-group">
+                          <input type="text" id="form_twitter" class="form-control form-control-alternative" id="twitter" aria-describedby="twitter"
+                              placeholder="https://twitter.com/johnwick">
+                      </div>
+                      <div class="form-group">
+                          <input type="text" id="form_facebook" class="form-control form-control-alternative" id="facebook" aria-describedby="facebook"
+                              placeholder="https://facebook.com/johnwick">
+                      </div>
+                      <div class="form-group">
+                          <input type="text" id="form_instagram" class="form-control form-control-alternative" id="instagram" aria-describedby="instagram"
+                              placeholder="https://instagram.com/johnwick">
+                      </div>
+                      <div class="form-group">
+                          <input type="text" id="form_github" class="form-control form-control-alternative" id="github" aria-describedby="github"
+                              placeholder="https://github.com/johnwick">
+                      </div>
+                      <div class="form-group">
+                          <input type="text" id="form_youtube" class="form-control form-control-alternative" id="youtube" aria-describedby="youtube"
+                              placeholder="https://youtube.com/johnwick">
+                      </div>
+                      <div class="form-group">
+                          <input type="text" id="form_whatsapp" class="form-control form-control-alternative" id="whatsapp" aria-describedby="whatsapp"
+                              placeholder="https://whatsapp.com/johnwick">
+                      </div>
+                  </div>
+                  <div class="tab-pane fade" id="tabs-icons-text-3" role="tabpanel" aria-labelledby="tabs-icons-text-3-tab">
+                    <br>
+                        <input type="file" name="img"/>
+                        <br>
+                        <button id="submit" type="submit">Upload</button>
+                        <h1>Still testing this feature... </h1>
+                        <div id="photo">
+                            <img src="{{ photo.image.url }}">
+                        </div>
+                  </div>
+                  <div class="tab-pane fade" id="tabs-icons-text-4" role="tabpanel" aria-labelledby="tabs-icons-text-3-tab">
+                      <div class="paymentWrap">
+                          <div class="btn-group paymentBtnGroup btn-group-justified row" data-toggle="buttons">
+                              <label class="btn paymentMethod active col-md-6">
+                                  <div class="method visa"></div>
+                                  <input type="radio" name="template" onchange="oneworld(1)" checked>
+                              </label>
+                              <label class="btn paymentMethod col-md-6">
+                                  <div class="method master-card"></div>
+                                  <input type="radio" name="template" onchange="oneworld(2)">
+                              </label>
+                              <label class="btn paymentMethod col-md-6">
+                                  <div class="method amex"></div>
+                                  <input type="radio"  name="template" onchange="oneworld(3)">
+                              </label>
+                              <label class="btn paymentMethod col-md-6">
+                                  <div class="method ez-cash"></div>
+                                  <input type="radio" name="template" onchange="oneworld(4)">
+                              </label>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 mt-5 mt-lg-0">
+            <!-- Menu -->
+            <div class="nav-wrapper">
+              <ul class="nav nav-pills nav-fill flex-column flex-md-row" id="tabs-text" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link mb-sm-3 mb-md-0" id="tabs-text-1-tab" data-toggle="tab" href="#tabs-text-1" role="tab" aria-controls="tabs-text-1" aria-selected="true">Home</a>
+                </li>
+              </ul>
+            </div>
+            <div class="card shadow">
+              <div class="card-body">
+                <div class="tab-content" id="myTabContent">
+                  <div class="tab-pane fade show active" id="tabs-text-1" role="tabpanel" aria-labelledby="tabs-text-1-tab">
+                      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="sample2">
+                          <table cellpadding="0" id="one" cellspacing="0" class="sc-gPEVay eQYmiW sample one tab-pane"
+                              style="vertical-align: -webkit-baseline-middle; font-size: medium; font-family: Arial;">
+                              <tbody>
+                                  <tr>
+                                      <td>
+                                          <table cellpadding="0" cellspacing="0" class="sc-gPEVay eQYmiW"
+                                              style="vertical-align: -webkit-baseline-middle; font-size: medium; font-family: Arial;">
+                                              <tbody>
+                                                  <tr>
+                                                      <td width="150" style="vertical-align: middle;"><span class="sc-kgAjT cuzzPp"
+                                                              style="margin-right: 20px; display: block;"><img
+                                                                  src="https://d36urhup7zbd7q.cloudfront.net/07018871-3bf0-473c-97fe-022fe1555691/dwight500x500.format_png.resize_200x.png#logo"
+                                                                  role="presentation" width="130" class="sc-cHGsZl bHiaRe"
+                                                                  style="max-width: 130px;border-radius: 50%;"></span></td>
+                                                      <td style="vertical-align: middle;">
+                                                          <h3 color="#000000" id="names"
+                                                              style="margin: 0px; font-size: 18px; color: rgb(0, 0, 0);">Josh Smith
+                                                          </h3>
+                                                          <p color="#000000" font-size="medium" class="sc-fMiknA bxZCMx"
+                                                              style="margin: 0px; color: rgb(0, 0, 0); font-size: 14px; line-height: 22px;">
+                                                              <span id="designation">Chief Technology Officer</span>
+                                                          </p>
+                                                          <p color="#000000" font-size="medium" class="sc-dVhcbM fghLuF"
+                                                              style="margin: 0px; font-weight: 500; color: rgb(0, 0, 0); font-size: 14px; line-height: 22px;">
+                                                              <span id="department">Information
+                                                                  Technology</span><span>&nbsp;|&nbsp;</span><span
+                                                                  id="company">StepWise</span>
+                                                          </p>
+                                                      </td>
+                                                      <td width="30">
+                                                          <div style="width: 30px;"></div>
+                                                      </td>
+                                                      <td color="#ff7f00" direction="vertical" width="1" class="sc-jhAzac hmXDXQ"
+                                                          style="width: 1px; border-bottom: none; border-left: 1px solid rgb(255, 127, 0);">
+                                                      </td>
+                                                      <td width="30">
+                                                          <div style="width: 30px;"></div>
+                                                      </td>
+                                                      <td style="vertical-align: middle;">
+                                                          <table cellpadding="0" cellspacing="0" class="sc-gPEVay eQYmiW"
+                                                              style="vertical-align: -webkit-baseline-middle; font-size: medium; font-family: Arial;">
+                                                              <tbody>
+                                                                  <tr height="25" style="vertical-align: middle;">
+                                                                      <td width="30" style="vertical-align: middle;">
+                                                                          <table cellpadding="0" cellspacing="0"
+                                                                              class="sc-gPEVay eQYmiW"
+                                                                              style="vertical-align: -webkit-baseline-middle; font-size: medium; font-family: Arial;">
+                                                                              <tbody>
+                                                                                  <tr>
+                                                                                      <td style="vertical-align: bottom;"><span
+                                                                                              color="#ff7f00" width="11"
+                                                                                              class="sc-jlyJG bbyJzT"
+                                                                                              style="display: block; background-color: rgb(255, 127, 0);"><img
+                                                                                                  src="https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/phone-icon-2x.png"
+                                                                                                  color="#ff7f00" width="13"
+                                                                                                  class="sc-iRbamj blSEcj"
+                                                                                                  style="display: block; background-color: rgb(255, 127, 0);"></span>
+                                                                                      </td>
+                                                                                  </tr>
+                                                                              </tbody>
+                                                                          </table>
+                                                                      </td>
+                                                                      <td style="padding: 0px; color: rgb(0, 0, 0);"><a
+                                                                              href="tel:+254 712 456 789" color="#000000"
+                                                                              class="sc-gipzik iyhjGb"
+                                                                              style="text-decoration: none; color: rgb(0, 0, 0); font-size: 12px;"><span
+                                                                                  id="phone">&nbsp;+254
+                                                                                  712 456 789</span></a></td>
+                                                                  </tr>
+                                                                  <tr height="25" style="vertical-align: middle;">
+                                                                      <td width="30" style="vertical-align: middle;">
+                                                                          <table cellpadding="0" cellspacing="0"
+                                                                              class="sc-gPEVay eQYmiW"
+                                                                              style="vertical-align: -webkit-baseline-middle; font-size: medium; font-family: Arial;">
+                                                                              <tbody>
+                                                                                  <tr>
+                                                                                      <td style="vertical-align: bottom;"><span
+                                                                                              color="#ff7f00" width="11"
+                                                                                              class="sc-jlyJG bbyJzT"
+                                                                                              style="display: block; background-color: rgb(255, 127, 0);"><img
+                                                                                                  src="https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/email-icon-2x.png"
+                                                                                                  color="#ff7f00" width="13"
+                                                                                                  class="sc-iRbamj blSEcj"
+                                                                                                  style="display: block; background-color: rgb(255, 127, 0);"></span>
+                                                                                      </td>
+                                                                                  </tr>
+                                                                              </tbody>
+                                                                          </table>
+                                                                      </td>
+                                                                      <td style="padding: 0px;"><a href="mailto:josh@stepwise.net"
+                                                                              color="#000000" class="sc-gipzik iyhjGb"
+                                                                              style="text-decoration: none; color: rgb(0, 0, 0); font-size: 12px;"><span
+                                                                                  id="email">&nbsp;josh@stepwise.net</span></a>
+                                                                      </td>
+                                                                  </tr>
+                                                                  <tr height="25" style="vertical-align: middle;">
+                                                                      <td width="30" style="vertical-align: middle;">
+                                                                          <table cellpadding="0" cellspacing="0"
+                                                                              class="sc-gPEVay eQYmiW"
+                                                                              style="vertical-align: -webkit-baseline-middle; font-size: medium; font-family: Arial;">
+                                                                              <tbody>
+                                                                                  <tr>
+                                                                                      <td style="vertical-align: bottom;"><span
+                                                                                              color="#ff7f00" width="11"
+                                                                                              class="sc-jlyJG bbyJzT"
+                                                                                              style="display: block; background-color: rgb(255, 127, 0);"><img
+                                                                                                  src="https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/link-icon-2x.png"
+                                                                                                  color="#ff7f00" width="13"
+                                                                                                  class="sc-iRbamj blSEcj"
+                                                                                                  style="display: block; background-color: rgb(255, 127, 0);"></span>
+                                                                                      </td>
+                                                                                  </tr>
+                                                                              </tbody>
+                                                                          </table>
+                                                                      </td>
+                                                                      <td style="padding: 0px;"><a href="//www.stepwise.net"
+                                                                              color="#000000" class="sc-gipzik iyhjGb"
+                                                                              style="text-decoration: none; color: rgb(0, 0, 0); font-size: 12px;"><span
+                                                                                  id="website">&nbsp;www.stepwise.net</span></a>
+                                                                      </td>
+                                                                  </tr>
+                                                              </tbody>
+                                                          </table>
+                                                      </td>
+                                                  </tr>
+                                              </tbody>
+                                          </table>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td>
+                                          <table cellpadding="0" cellspacing="0" class="sc-gPEVay eQYmiW"
+                                              style="vertical-align: -webkit-baseline-middle; font-size: medium; font-family: Arial; width: 100%;">
+                                              <tbody>
+                                                  <tr>
+                                                      <td height="30"></td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td color="#ff7f00" direction="horizontal" height="1" class="sc-jhAzac hmXDXQ"
+                                                          style="width: 100%; border-bottom: 1px solid rgb(255, 127, 0); border-left: none; display: block;">
+                                                      </td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td height="30"></td>
+                                                  </tr>
+                                              </tbody>
+                                          </table>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td>
+                                          <table cellpadding="0" cellspacing="0" class="sc-gPEVay eQYmiW"
+                                              style="vertical-align: -webkit-baseline-middle; font-size: medium; font-family: Arial; width: 100%;">
+                                              <tbody>
+                                                  <tr>
+                                                      <td style="vertical-align: top;"><img
+                                                              src="https://drive.google.com/uc?id=1HJIOSoLSWunM_LRnxaV6rL5Bfj3tRutz"
+                                                              role="presentation" width="130" class="sc-cHGsZl bHiaRe"
+                                                              style="max-width: 130px; display: inline-block;"></td>
+                                                      <td style="text-align: right; vertical-align: top;">
+                                                          <table cellpadding="0" cellspacing="0" class="sc-gPEVay eQYmiW"
+                                                              style="vertical-align: -webkit-baseline-middle; font-size: medium; font-family: Arial; display: inline-block;">
+                                                              <tbody>
+                                                                  <tr style="text-align: right;">
+                                                                      <td><a href="https://www.facebook.com/joshsmith" color="#6A78D1"
+                                                                              class="sc-hzDkRC kpsoyz"
+                                                                              style="display: inline-block; padding: 0px; background-color: rgb(106, 120, 209);"><img
+                                                                                  src="https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/facebook-icon-2x.png"
+                                                                                  alt="facebook" color="#6A78D1" height="24"
+                                                                                  class="sc-bRBYWo ccSRck"
+                                                                                  style="background-color: rgb(106, 120, 209); max-width: 135px; display: block;"></a>
+                                                                      </td>
+                                                                      <td width="5">
+                                                                          <div></div>
+                                                                      </td>
+                                                                      <td><a href="https://www.twitter.com/joshsmith" color="#6A78D1"
+                                                                              class="sc-hzDkRC kpsoyz"
+                                                                              style="display: inline-block; padding: 0px; background-color: rgb(106, 120, 209);"><img
+                                                                                  src="https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/twitter-icon-2x.png"
+                                                                                  alt="twitter" color="#6A78D1" height="24"
+                                                                                  class="sc-bRBYWo ccSRck"
+                                                                                  style="background-color: rgb(106, 120, 209); max-width: 135px; display: block;"></a>
+                                                                      </td>
+                                                                      <td width="5">
+                                                                          <div></div>
+                                                                      </td>
+                                                                      <td><a href="https://www.linkedin.com/josh-smith"
+                                                                              color="#6A78D1" class="sc-hzDkRC kpsoyz"
+                                                                              style="display: inline-block; padding: 0px; background-color: rgb(106, 120, 209);"><img
+                                                                                  src="https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/linkedin-icon-2x.png"
+                                                                                  alt="linkedin" color="#6A78D1" height="24"
+                                                                                  class="sc-bRBYWo ccSRck"
+                                                                                  style="background-color: rgb(106, 120, 209); max-width: 135px; display: block;"></a>
+                                                                      </td>
+                                                                      <td width="5">
+                                                                          <div></div>
+                                                                      </td>
+                                                                  </tr>
+                                                              </tbody>
+                                                          </table>
+                                                      </td>
+                                                  </tr>
+                                              </tbody>
+                                          </table>
+                                      </td>
+                                  </tr>
+                              </tbody>
+                          </table>
+                      </div>
+                      <!-- <p><button class="samplecopybtn">Copy</button></p> -->
+                  </div>
+              </div>
+          </div>
+          </div>
+          <button type="button" class="btn btn-default btn-round samplecopybtn">Copy</button>
+          </div>
+        </div>
+        <div class="row row-grid justify-content-between">
+  </div>
+<footer class="footer has-cards">
+  <div class="container">
+   <hr>
+    <div class="row align-items-center justify-content-md-between">
+      <div class="col-md-6">
+        <div class="copyright">
+          &copy; 2021 <a href="" target="_blank">Stepwise</a>.
+        </div>
+      </div>
+      <div class="col-md-6">
+        <ul class="nav nav-footer justify-content-end">
+          <li class="nav-item">
+            <a href="" class="nav-link" target="_blank">Stepwise</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link" target="_blank">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link" target="_blank">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link" target="_blank">License</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+</div>
+
+{% endblock content %}
