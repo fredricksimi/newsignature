@@ -5,7 +5,7 @@ var departmentname = document.getElementById('form_department').value
 var phonenumber = document.getElementById('form_phone').value
 var emailname = document.getElementById('form_email').value
 var websitename = document.getElementById('form_website').value
-// var facebookicon = document.getElementById('form_facebook').value 
+// var facebookicon = document.getElementById('form_facebook').value
 var facebookicon = document.getElementById('form_facebook').value
 var twittericon = document.getElementById('form_twitter').value
 var linkedinicon = document.getElementById('form_linkedin').value
@@ -18,7 +18,7 @@ var githubicon = document.getElementById('form_github').value
 $('#form_names').on('input', function() {
     $('#names').text(this.value)
     fullname = this.value
-    
+
   })
   $('#form_company').on('input', function() {
       $('#company').text(this.value)
@@ -75,51 +75,51 @@ $('#form_website').on('input', function() {
 
 
 
-// var copyEmailBtn = document.querySelector('.js-emailcopybtn');  
-// copyEmailBtn.addEventListener('click', function(event) {  
-//   // Select the email link anchor text  
-//   var emailLink = document.querySelector('.js-emaillink');  
-//   var range = document.createRange();  
-//   range.selectNode(emailLink);  
-//   window.getSelection().addRange(range);  
-    
-//   try {  
-//     // Now that we've selected the anchor text, execute the copy command  
-//     var successful = document.execCommand('copy');  
-//     var msg = successful ? 'successful' : 'unsuccessful';  
-//     console.log('Copy email command was ' + msg);  
-//   } catch(err) {  
-//     console.log('Oops, unable to copy');  
-//   }  
-    
-//   // Remove the selections - NOTE: Should use   
-//   // removeRange(range) when it is supported  
-//   window.getSelection().removeAllRanges();  
+// var copyEmailBtn = document.querySelector('.js-emailcopybtn');
+// copyEmailBtn.addEventListener('click', function(event) {
+//   // Select the email link anchor text
+//   var emailLink = document.querySelector('.js-emaillink');
+//   var range = document.createRange();
+//   range.selectNode(emailLink);
+//   window.getSelection().addRange(range);
+
+//   try {
+//     // Now that we've selected the anchor text, execute the copy command
+//     var successful = document.execCommand('copy');
+//     var msg = successful ? 'successful' : 'unsuccessful';
+//     console.log('Copy email command was ' + msg);
+//   } catch(err) {
+//     console.log('Oops, unable to copy');
+//   }
+
+//   // Remove the selections - NOTE: Should use
+//   // removeRange(range) when it is supported
+//   window.getSelection().removeAllRanges();
 // });
 
 
 
-var samplecopy = document.querySelector('.samplecopybtn');  
-samplecopy.addEventListener('click', function(event) {  
-  // Select the email link anchor text  
-  var emailLink = document.querySelector('.sample');  
-  window.getSelection().removeAllRanges();  
-  var range = document.createRange();  
-  range.selectNode(emailLink);  
-  window.getSelection().addRange(range);  
-    
-  try {  
-    // Now that we've selected the anchor text, execute the copy command  
-    var successful = document.execCommand('copy');  
-    var msg = successful ? 'successful' : 'unsuccessful';  
-    console.log('Copy email command was ' + msg);  
-  } catch(err) {  
-    console.log('Oops, unable to copy');  
-  }  
-    
-  // Remove the selections - NOTE: Should use   
-  // removeRange(range) when it is supported  
-  window.getSelection().removeAllRanges();  
+var samplecopy = document.querySelector('.samplecopybtn');
+samplecopy.addEventListener('click', function(event) {
+  // Select the email link anchor text
+  var emailLink = document.querySelector('.sample');
+  window.getSelection().removeAllRanges();
+  var range = document.createRange();
+  range.selectNode(emailLink);
+  window.getSelection().addRange(range);
+
+  try {
+    // Now that we've selected the anchor text, execute the copy command
+    var successful = document.execCommand('copy');
+    var msg = successful ? 'successful' : 'unsuccessful';
+    console.log('Copy email command was ' + msg);
+  } catch(err) {
+    console.log('Oops, unable to copy');
+  }
+
+  // Remove the selections - NOTE: Should use
+  // removeRange(range) when it is supported
+  window.getSelection().removeAllRanges();
 });
 
 
@@ -660,7 +660,7 @@ function oneworld(id) {
                                         style="vertical-align: -webkit-baseline-middle; font-size: medium; font-family: Arial; display: inline-block;">
                                         <tbody>
                                             <tr style="text-align: right;">
-                                                <td><a href="https://www.facebook.com/joshsmith" color="#6A78D1"
+                                                <td><a href="${facebookicon}" color="#6A78D1"
                                                         class="sc-hzDkRC kpsoyz"
                                                         style="display: inline-block; padding: 0px; background-color: rgb(106, 120, 209);"><img
                                                             src="https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/facebook-icon-2x.png"
@@ -671,7 +671,7 @@ function oneworld(id) {
                                                 <td width="5">
                                                     <div></div>
                                                 </td>
-                                                <td><a href="https://www.twitter.com/joshsmith" color="#6A78D1"
+                                                <td><a href="${twittericon}" color="#6A78D1"
                                                         class="sc-hzDkRC kpsoyz"
                                                         style="display: inline-block; padding: 0px; background-color: rgb(106, 120, 209);"><img
                                                             src="https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/twitter-icon-2x.png"
