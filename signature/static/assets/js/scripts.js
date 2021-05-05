@@ -307,9 +307,7 @@ function oneworld(id) {
                                         <div
                                             style="font-family: &quot;Lucida Sans Unicode&quot;, &quot;Lucida Grande&quot;, sans-serif;">
                                             <a href="tel:${phonenumber}"
-                                                style="text-decoration: none; color: rgb(0, 0, 1);" id="phone">${phonenumber}</a> , <a
-                                                href="tel:${phonenumber}"
-                                                style="text-decoration: none; color: rgb(0, 0, 1);">${phonenumber}</a>
+                                                style="text-decoration: none; color: rgb(0, 0, 1);" id="phone">${phonenumber}</a>
                                         </div>
                                     </td>
                                 </tr>
