@@ -62,30 +62,31 @@
                 </li>
               </ul>
             </div>
+            
             <div class="card shadow">
               <div class="card-body">
                 <div class="tab-content" id="myTabContent">
                   <div class="tab-pane fade show active" id="tabs-icons-text-1" role="tabpanel" aria-labelledby="tabs-icons-text-1-tab">
                       <div class="form-group">
-                          <input type="text" placeholder="names" id="form_names" class="form-control form-control-alternative" />
+                          <input type="text" placeholder="names" id="form_names" class="form-control form-control-alternative" value="{{sigtool.full_name}}" {{readonlyvar}}/>
                       </div>
                       <div class="form-group">
-                          <input type="text" placeholder="company" id="form_company" class="form-control form-control-alternative" />
+                          <input type="text" placeholder="company" id="form_company" class="form-control form-control-alternative" value="{{sigtool.company}}"  {{readonlyvar}}/>
                       </div>
                       <div class="form-group">
-                          <input type="text" placeholder="Designation" id="form_designation" class="form-control form-control-alternative" />
+                          <input type="text" placeholder="Designation" id="form_designation" class="form-control form-control-alternative" value="{{sigtool.designation}}"  {{readonlyvar}}/>
                         </div>
                         <div class="form-group">
-                          <input type="text" placeholder="Department" id="form_department" class="form-control form-control-alternative" />
+                          <input type="text" placeholder="Department" id="form_department" class="form-control form-control-alternative" value="{{sigtool.department}}"  {{readonlyvar}}/>
                         </div>
                         <div class="form-group">
-                          <input type="text" placeholder="Phone" id="form_phone" class="form-control form-control-alternative" />
+                          <input type="text" placeholder="Phone" id="form_phone" class="form-control form-control-alternative" value="{{sigtool.phone}}"  {{readonlyvar}}/>
                         </div>
                         <div class="form-group">
-                          <input type="text" placeholder="Email" id="form_email" class="form-control form-control-alternative" />
+                          <input type="text" placeholder="Email" id="form_email" class="form-control form-control-alternative" value="{{sigtool.email}}"   {{readonlyvar}}/>
                         </div>
                         <div class="form-group">
-                          <input type="text" placeholder="Website" id="form_website" class="form-control form-control-alternative" />
+                          <input type="text" placeholder="Website" id="form_website" class="form-control form-control-alternative" value="{{sigtool.website}}"  {{readonlyvar}}/>
                         </div>
                   </div>
                   <div class="tab-pane fade" id="tabs-icons-text-2" role="tabpanel" aria-labelledby="tabs-icons-text-2-tab">
@@ -153,7 +154,12 @@
                 </div>
               </div>
             </div>
+            
           </div>
+            
+          
+          
+           
           <div class="col-lg-6 mt-5 mt-lg-0">
             <!-- Menu -->
             <div class="nav-wrapper">
@@ -184,16 +190,16 @@
                                                                   style="max-width: 130px;border-radius: 50%;"></span></td>
                                                       <td style="vertical-align: middle;">
                                                           <h3 color="#000000" id="names"
-                                                              style="margin: 0px; font-size: 18px; color: rgb(0, 0, 0);">Dwight Schrute
+                                                              style="margin: 0px; font-size: 18px; color: rgb(0, 0, 0);">{{sigtool.full_name}}
                                                           </h3>
                                                           <p color="#000000" font-size="medium" class="sc-fMiknA bxZCMx"
                                                               style="margin: 0px; color: rgb(0, 0, 0); font-size: 14px; line-height: 22px;">
-                                                              <span id="designation">Regional Manager</span>
+                                                              <span id="designation">{{sigtool.designation}}</span>
                                                           </p>
                                                           <p color="#000000" font-size="medium" class="sc-dVhcbM fghLuF"
                                                               style="margin: 0px; font-weight: 500; color: rgb(0, 0, 0); font-size: 14px; line-height: 22px;">
-                                                              <span id="department">Sales Dept.</span><span>&nbsp;|&nbsp;</span><span
-                                                                  id="company">Paper Company</span>
+                                                              <span id="department">{{sigtool.department}}</span><span>&nbsp;|&nbsp;</span><span
+                                                                  id="company">{{sigtool.company}}</span>
                                                           </p>
                                                       </td>
                                                       <td width="30">
@@ -233,8 +239,7 @@
                                                                               href="tel:+254 712 456 789" color="#000000"
                                                                               class="sc-gipzik iyhjGb"
                                                                               style="text-decoration: none; color: rgb(0, 0, 0); font-size: 12px;"><span
-                                                                                  id="phone">&nbsp;+254
-                                                                                  712 456 789</span></a></td>
+                                                                                  id="phone">&nbsp;{{sigtool.phone}}</span></a></td>
                                                                   </tr>
                                                                   <tr height="25" style="vertical-align: middle;">
                                                                       <td width="30" style="vertical-align: middle;">
@@ -256,10 +261,10 @@
                                                                               </tbody>
                                                                           </table>
                                                                       </td>
-                                                                      <td style="padding: 0px;"><a href="mailto:dwight@dundermifflin.com"
+                                                                      <td style="padding: 0px;"><a href="mailto:{{sigtool.email}}"
                                                                               color="#000000" class="sc-gipzik iyhjGb"
                                                                               style="text-decoration: none; color: rgb(0, 0, 0); font-size: 12px;"><span
-                                                                                  id="email">&nbsp;dwight@dundermifflin.com</span></a>
+                                                                                  id="email">&nbsp;{{sigtool.email}}</span></a>
                                                                       </td>
                                                                   </tr>
                                                                   <tr height="25" style="vertical-align: middle;">
@@ -282,10 +287,10 @@
                                                                               </tbody>
                                                                           </table>
                                                                       </td>
-                                                                      <td style="padding: 0px;"><a href="//www.dundermifflin.com"
+                                                                      <td style="padding: 0px;"><a href="{{sigtool.website}}"
                                                                               color="#000000" class="sc-gipzik iyhjGb"
                                                                               style="text-decoration: none; color: rgb(0, 0, 0); font-size: 12px;"><span
-                                                                                  id="website">&nbsp;www.dundermifflin.com</span></a>
+                                                                                  id="website">&nbsp;{{sigtool.website}}</span></a>
                                                                       </td>
                                                                   </tr>
                                                               </tbody>
@@ -331,7 +336,7 @@
                                                               style="vertical-align: -webkit-baseline-middle; font-size: medium; font-family: Arial; display: inline-block;">
                                                               <tbody>
                                                                   <tr style="text-align: right;">
-                                                                      <td><a href="https://www.facebook.com/joshsmith" color="#6A78D1"
+                                                                      <td><a href="{{sigtool.facebook}}" color="#6A78D1"
                                                                               class="sc-hzDkRC kpsoyz"
                                                                               style="display: inline-block; padding: 0px; background-color: rgb(106, 120, 209);"><img
                                                                                   src="https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/facebook-icon-2x.png"
@@ -342,7 +347,7 @@
                                                                       <td width="5">
                                                                           <div></div>
                                                                       </td>
-                                                                      <td><a href="https://www.twitter.com/joshsmith" color="#6A78D1"
+                                                                      <td><a href="{{sigtool.twitter}}" color="#6A78D1"
                                                                               class="sc-hzDkRC kpsoyz"
                                                                               style="display: inline-block; padding: 0px; background-color: rgb(106, 120, 209);"><img
                                                                                   src="https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/twitter-icon-2x.png"
@@ -353,7 +358,7 @@
                                                                       <td width="5">
                                                                           <div></div>
                                                                       </td>
-                                                                      <td><a href="https://www.linkedin.com/josh-smith"
+                                                                      <td><a href="{{sigtool.linkedin}}"
                                                                               color="#6A78D1" class="sc-hzDkRC kpsoyz"
                                                                               style="display: inline-block; padding: 0px; background-color: rgb(106, 120, 209);"><img
                                                                                   src="https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/linkedin-icon-2x.png"
@@ -383,6 +388,7 @@
           </div>
           <button type="button" class="btn btn-default btn-round samplecopybtn">Copy</button>
           </div>
+           
         </div>
         <div class="row row-grid justify-content-between">
   </div>
