@@ -70,25 +70,25 @@
                     <form method="POST" enctype="multipart/form-data" action="{% url 'signature:home' %}">
                       {% csrf_token %}
                       <div class="form-group">
-                        <input id="full_name" type="text" name="full_name" class="form-control form-control-alternative" placeholder="Full Name" value="{{sigtool.full_name}}" max_length="100" required>
+                        <input  type="text" id="form_names" name="full_name" class="form-control form-control-alternative" placeholder="Full Name" value="{{sigtool.full_name}}" max_length="100" required>
                       </div>
                       <div class="form-group">
-                        <input id="company" type="text" name="company" class="form-control form-control-alternative" placeholder="Company" max_length="100" required>
+                        <input  type="text" id="form_company" name="company" class="form-control form-control-alternative" placeholder="Company" value="{{sigtool.company}}" max_length="100" required>
                       </div>
                       <div class="form-group">
-                        <input id="designation" type="text" name="designation" class="form-control form-control-alternative" placeholder="Designation" max_length="100" required>
+                        <input type="text" id="form_designation" name="designation" class="form-control form-control-alternative" placeholder="Designation" value="{{sigtool.designation}}" max_length="100" required>
                       </div>
                       <div class="form-group">
-                        <input id="department" type="text" name="department" class="form-control form-control-alternative" placeholder="Department" max_length="100" required>
+                        <input  type="text" id="form_department" name="department" class="form-control form-control-alternative" placeholder="Department" value="{{sigtool.department}}" max_length="100" required>
                       </div>
                       <div class="form-group">
-                        <input id="phone" type="text" name="phone" class="form-control form-control-alternative" placeholder="Phone" max_length="100" required>
+                        <input  type="text" id="form_phone" name="phone" class="form-control form-control-alternative" placeholder="Phone" value="{{sigtool.phone}}" max_length="100" required>
                       </div>
                       <div class="form-group">
-                        <input id="email" type="text" name="email" class="form-control form-control-alternative" placeholder="Email" max_length="100" required>
+                        <input  type="text" id="form_email" name="email" class="form-control form-control-alternative" placeholder="Email" value="{{sigtool.email}}" max_length="100" required>
                       </div>
                       <div class="form-group">
-                        <input id="website" type="text" name="website" class="form-control form-control-alternative" placeholder="Website" max_length="100" required>
+                        <input  type="text" id="form_website" name="website" class="form-control form-control-alternative" placeholder="Website" value="{{sigtool.website}}" max_length="100" required>
                       </div>
                       <!-- <div class="form-group">
                           <input type="text" placeholder="names" id="form_names" class="form-control form-control-alternative" value="{{sigtool.full_name}}" {{readonlyvar}}/>
@@ -115,79 +115,39 @@
                   </div>
                   <div class="tab-pane fade" id="tabs-icons-text-2" role="tabpanel" aria-labelledby="tabs-icons-text-2-tab">
                     <div class="form-group">
-                      <input id="facebook" type="text" name="Facebook" class="form-control form-control-alternative" placeholder="https://facebook.com/johnwick" max_length="100">
+                      <input  type="text" id="form_facebook" name="Facebook" class="form-control form-control-alternative" value="{{sigtool.facebook}}" placeholder="Your Facebook Profile Link" max_length="100">
                     </div>
                     <div class="form-group">
-                      <input id="linkedin" type="text" name="LinkedIn" class="form-control form-control-alternative" placeholder="https://linkedin.com/johnwick" max_length="100">
+                      <input  type="text" id="form_linkedin" name="LinkedIn" class="form-control form-control-alternative" value="{{sigtool.linkedin}}" placeholder="Your LinkedIn Profile Link" max_length="100">
                     </div>
                     <div class="form-group">
-                      <input id="twitter" type="text" name="Twitter" class="form-control form-control-alternative" placeholder="https://twitter.com/johnwick" max_length="100">
+                      <input  type="text" id="form_twitter" name="Twitter" class="form-control form-control-alternative" value="{{sigtool.twitter}}" placeholder="Your Twitter Profile Link" max_length="100">
                     </div>
                     <div class="form-group">
-                      <input id="github" type="text" name="GitHub" class="form-control form-control-alternative" placeholder="https://github.com/johnwick" max_length="100">
+                      <input  type="text" id="form_github" name="GitHub" class="form-control form-control-alternative" value="{{sigtool.github}}" placeholder="Your GitHub Profile Link" max_length="100">
                     </div>
                     <div class="form-group">
-                      <input id="instagram" type="text" name="Instagram" class="form-control form-control-alternative" placeholder="https://instagram.com/johnwick" max_length="100">
+                      <input  type="text" id="form_instagram" name="Instagram" class="form-control form-control-alternative" value="{{sigtool.instagram}}" placeholder="Your Instagram Profile Link" max_length="100">
                     </div>
                     <div class="form-group">
-                      <input id="whatsapp" type="text" name="WhatsApp" class="form-control form-control-alternative" placeholder="https://wa.me/8937453" max_length="100">
+                      <input type="text" id="form_whatsapp" name="WhatsApp" class="form-control form-control-alternative" value="{{sigtool.whatsApp}}" placeholder="Your WhatsApp Number" max_length="100">
                     </div>
                     <div class="form-group">
-                      <input id="youtube" type="text" name="YouTube" class="form-control form-control-alternative" placeholder="https://youtube.com/johnwick" max_length="100">
+                      <input id="form_youtube" type="text" name="YouTube" class="form-control form-control-alternative" value="{{sigtool.youtube}}" placeholder="Your YouTube Channel Link" max_length="100">
                     </div>
-                      <!-- <div class="form-group">
-                          <input type="text" id="form_linkedin" class="form-control form-control-alternative" id="linkedin" aria-describedby="linkedin"
-                              placeholder="https://linkedin.com/johnwick">
-                      </div>
-                      <div class="form-group">
-                          <input type="text" id="form_twitter" class="form-control form-control-alternative" id="twitter" aria-describedby="twitter"
-                              placeholder="https://twitter.com/johnwick">
-                      </div>
-                      <div class="form-group">
-                          <input type="text" id="form_facebook" class="form-control form-control-alternative" id="facebook" aria-describedby="facebook"
-                              placeholder="https://facebook.com/johnwick">
-                      </div>
-                      <div class="form-group">
-                          <input type="text" id="form_instagram" class="form-control form-control-alternative" id="instagram" aria-describedby="instagram"
-                              placeholder="https://instagram.com/johnwick">
-                      </div>
-                      <div class="form-group">
-                          <input type="text" id="form_github" class="form-control form-control-alternative" id="github" aria-describedby="github"
-                              placeholder="https://github.com/johnwick">
-                      </div>
-                      <div class="form-group">
-                          <input type="text" id="form_youtube" class="form-control form-control-alternative" id="youtube" aria-describedby="youtube"
-                              placeholder="https://youtube.com/johnwick">
-                      </div>
-                      <div class="form-group">
-                          <input type="text" id="form_whatsapp" class="form-control form-control-alternative" id="whatsapp" aria-describedby="whatsapp"
-                              placeholder="https://whatsapp.com/johnwick">
-                      </div> -->
-                    <!-- </form> -->
                   </div>
                   <div class="tab-pane fade" id="tabs-icons-text-3" role="tabpanel" aria-labelledby="tabs-icons-text-3-tab">
                     <br>
-                    <!-- <form method = "POST">
-                      {% csrf_token %} -->
                       <div class="form-group">
-                        <input id="image" type="file" name="image" class="form-control form-control-alternative">
+                        <input id="image" type="file" name="userimage" class="form-control form-control-alternative">
                       </div>
-                    
-                    <!-- </form> -->
-                        <!-- <input type="file" name="img"/> -->
-                        <!-- <br>
-                        <button id="submit" type="submit">Upload</button>
-                        <h1>Still testing this feature... </h1>
-                        <div id="photo">
-                            <img src="{{ photo.image.url }}">
-                        </div> -->
                   </div>
                   <div class="tab-pane fade" id="tabs-icons-text-4" role="tabpanel" aria-labelledby="tabs-icons-text-3-tab">
                       <div class="paymentWrap">
                           <div class="btn-group paymentBtnGroup btn-group-justified row" data-toggle="buttons">
                               <label class="btn paymentMethod active col-md-6">
                                   <div class="method visa"></div>
-                                  <input type="radio" name="template" onchange="oneworld(1)" checked>
+                                  <input type="radio" name="template" onchange="oneworld(4)" checked>
                               </label>
                               <label class="btn paymentMethod col-md-6">
                                   <div class="method master-card"></div>
@@ -199,7 +159,7 @@
                               </label>
                               <label class="btn paymentMethod col-md-6">
                                   <div class="method ez-cash"></div>
-                                  <input type="radio" name="template" onchange="oneworld(4)">
+                                  <input type="radio" name="template" onchange="oneworld(1)">
                               </label>
                           </div>
                       </div>
@@ -219,7 +179,7 @@
             <div class="nav-wrapper">
               <ul class="nav nav-pills nav-fill flex-column flex-md-row" id="tabs-text" role="tablist">
                 <li class="nav-item">
-                  <a class="nav-link mb-sm-3 mb-md-0" id="tabs-text-1-tab" data-toggle="tab" href="#tabs-text-1" role="tab" aria-controls="tabs-text-1" aria-selected="true">Home</a>
+                  <a class="mb-sm-3 mb-md-0" id="tabs-text-1-tab" data-toggle="tab"  role="tab" ><span style="color:transparent">Home</span></a>
                 </li>
               </ul>
             </div>
@@ -239,7 +199,7 @@
                                                   <tr>
                                                       <td width="150" style="vertical-align: middle;"><span class="sc-kgAjT cuzzPp"
                                                               style="margin-right: 20px; display: block;"><img
-                                                                  src="https://d36urhup7zbd7q.cloudfront.net/07018871-3bf0-473c-97fe-022fe1555691/dwight500x500.format_png.resize_200x.png#logo"
+                                                                  src="{{sigtool.image.url}}"
                                                                   role="presentation" width="130" class="sc-cHGsZl bHiaRe"
                                                                   style="max-width: 130px;border-radius: 50%;"></span></td>
                                                       <td style="vertical-align: middle;">
@@ -290,7 +250,7 @@
                                                                           </table>
                                                                       </td>
                                                                       <td style="padding: 0px; color: rgb(0, 0, 0);"><a
-                                                                              href="tel:+254 712 456 789" color="#000000"
+                                                                              href="{{sigtool.phone}}" color="#000000"
                                                                               class="sc-gipzik iyhjGb"
                                                                               style="text-decoration: none; color: rgb(0, 0, 0); font-size: 12px;"><span
                                                                                   id="phone">&nbsp;{{sigtool.phone}}</span></a></td>
@@ -392,33 +352,65 @@
                                                                   <tr style="text-align: right;">
                                                                       <td><a href="{{sigtool.facebook}}" color="#6A78D1"
                                                                               class="sc-hzDkRC kpsoyz"
-                                                                              style="display: inline-block; padding: 0px; background-color: rgb(106, 120, 209);"><img
-                                                                                  src="https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/facebook-icon-2x.png"
+                                                                              style="padding: 0px;  visibility:{% if sigtool.facebook %}block{% else %}hidden {% endif %}"><img
+                                                                                  src="https://img.icons8.com/android/24/000000/facebook-new.png"
                                                                                   alt="facebook" color="#6A78D1" height="24"
                                                                                   class="sc-bRBYWo ccSRck"
-                                                                                  style="background-color: rgb(106, 120, 209); max-width: 135px; display: block;"></a>
+                                                                                  style=" max-width: 135px; visibility:{% if sigtool.facebook %}block{% else %}hidden {% endif %};"></a>
                                                                       </td>
                                                                       <td width="5">
                                                                           <div></div>
                                                                       </td>
                                                                       <td><a href="{{sigtool.twitter}}" color="#6A78D1"
                                                                               class="sc-hzDkRC kpsoyz"
-                                                                              style="display: inline-block; padding: 0px; background-color: rgb(106, 120, 209);"><img
-                                                                                  src="https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/twitter-icon-2x.png"
+                                                                              style=" visibility:{% if sigtool.twitter %}block{% else %}hidden {% endif %}; padding: 0px; "><img
+                                                                                  src="https://img.icons8.com/android/24/000000/twitter.png"
                                                                                   alt="twitter" color="#6A78D1" height="24"
                                                                                   class="sc-bRBYWo ccSRck"
-                                                                                  style="background-color: rgb(106, 120, 209); max-width: 135px; display: block;"></a>
+                                                                                  style=" max-width: 135px;visibility:{% if sigtool.twitter %}block{% else %}hidden {% endif %};"></a>
                                                                       </td>
                                                                       <td width="5">
                                                                           <div></div>
                                                                       </td>
                                                                       <td><a href="{{sigtool.linkedin}}"
                                                                               color="#6A78D1" class="sc-hzDkRC kpsoyz"
-                                                                              style="display: inline-block; padding: 0px; background-color: rgb(106, 120, 209);"><img
-                                                                                  src="https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/linkedin-icon-2x.png"
+                                                                              style=" visibility:{% if sigtool.linkedin %}block{% else %}hidden {% endif %}; padding: 0px; "><img
+                                                                                  src="https://img.icons8.com/android/24/000000/linkedin.png"
                                                                                   alt="linkedin" color="#6A78D1" height="24"
                                                                                   class="sc-bRBYWo ccSRck"
-                                                                                  style="background-color: rgb(106, 120, 209); max-width: 135px; display: block;"></a>
+                                                                                  style=" max-width: 135px; visibility:{% if sigtool.linkedin %}block{% else %}hidden {% endif %};"></a>
+                                                                      </td>
+                                                                      <td><a href="{{sigtool.instagram}}"
+                                                                        color="#6A78D1" class="sc-hzDkRC kpsoyz"
+                                                                        style=" visibility:{% if sigtool.linkedin %}block{% else %}hidden {% endif %}; padding: 0px; "><img
+                                                                            src="https://img.icons8.com/material-rounded/24/000000/instagram-new.png"
+                                                                            alt="linkedin" color="#6A78D1" height="24"
+                                                                            class="sc-bRBYWo ccSRck"
+                                                                            style=" max-width: 135px; visibility:{% if sigtool.instagram %}block{% else %}hidden {% endif %};"></a>
+                                                                      </td>
+                                                                      <td><a href="{{sigtool.youtube}}"
+                                                                        color="#6A78D1" class="sc-hzDkRC kpsoyz"
+                                                                        style=" visibility:{% if sigtool.linkedin %}block{% else %}hidden {% endif %}; padding: 0px; "><img
+                                                                            src="https://img.icons8.com/material-rounded/24/000000/youtube-play.png"
+                                                                            alt="linkedin" color="#6A78D1" height="24"
+                                                                            class="sc-bRBYWo ccSRck"
+                                                                            style=" max-width: 135px; visibility:{% if sigtool.youtube %}block{% else %}hidden {% endif %};"></a>
+                                                                      </td>
+                                                                      <td><a href="{{sigtool.whatsapp}}"
+                                                                        color="#6A78D1" class="sc-hzDkRC kpsoyz"
+                                                                        style=" visibility:{% if sigtool.linkedin %}block{% else %}hidden {% endif %}; padding: 0px; "><img
+                                                                            src="https://img.icons8.com/material-rounded/24/000000/whatsapp.png"
+                                                                            alt="linkedin" color="#6A78D1" height="24"
+                                                                            class="sc-bRBYWo ccSRck"
+                                                                            style=" max-width: 135px; visibility:{% if sigtool.whatsapp %}block{% else %}hidden {% endif %};"></a>
+                                                                      </td>
+                                                                      <td><a href="{{sigtool.github}}"
+                                                                        color="#6A78D1" class="sc-hzDkRC kpsoyz"
+                                                                        style=" visibility:{% if sigtool.linkedin %}block{% else %}hidden {% endif %}; padding: 0px; "><img
+                                                                            src="https://img.icons8.com/fluent-systems-filled/48/000000/github.png"
+                                                                            alt="linkedin" color="#6A78D1" height="24"
+                                                                            class="sc-bRBYWo ccSRck"
+                                                                            style=" max-width: 135px; visibility:{% if sigtool.github %}block{% else %}hidden {% endif %};"></a>
                                                                       </td>
                                                                       <td width="5">
                                                                           <div></div>

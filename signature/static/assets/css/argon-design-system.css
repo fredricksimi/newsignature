@@ -24363,7 +24363,7 @@ pre>code.highlight {
 }
 
 .paymentWrap .paymentBtnGroup .paymentMethod .method.visa {
-	background-image: url("../img/two.png");
+	background-image: url("../img/one.png");
 }
 
 .paymentWrap .paymentBtnGroup .paymentMethod .method.master-card {
@@ -24379,7 +24379,7 @@ pre>code.highlight {
 }
 
 .paymentWrap .paymentBtnGroup .paymentMethod .method.ez-cash {
-	background-image: url("../img/one.png");
+	background-image: url("../img/two.png");
 }
 
 .paymentWrap .paymentBtnGroup .paymentMethod .method.ez-ch {

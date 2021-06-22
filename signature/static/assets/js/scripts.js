@@ -12,13 +12,12 @@ var linkedinicon = document.getElementById('form_linkedin').value
 var youtubeicon = document.getElementById('form_youtube').value
 var whatsappicon = document.getElementById('form_whatsapp').value
 var githubicon = document.getElementById('form_github').value
-
+var instagramicon = document.getElementById('form_instagram').value
 
 
 $('#form_names').on('input', function() {
     $('#names').text(this.value)
     fullname = this.value
-
   })
   $('#form_company').on('input', function() {
       $('#company').text(this.value)
@@ -69,6 +68,10 @@ $('#form_website').on('input', function() {
     instagramicon = this.value
   })
   $('#form_whatsapp').on('input', function() {
+    $('#whatsappid').text(this.value)
+    whatsappicon = this.value
+  })
+  $('#form_instagram').on('input', function() {
     $('#whatsappid').text(this.value)
     whatsappicon = this.value
   })
@@ -149,20 +152,20 @@ function oneworld(id) {
                                     style="font-size:11.0pt; font-family:&quot;Arial&quot;,sans-serif; color:#7FC41C">${fullname}</span></b><b><span
                                     style="font-family:&quot;Arial&quot;,sans-serif; color:#7FC41C"></span></b></p>
                         <p class="x_MsoNormal"><span
-                                style="font-size:8.0pt; font-family:&quot;Arial&quot;,sans-serif">${designationname}</span>
+                                style="font-size:8.0pt; font-family:&quot;Arial&quot;,sans-serif">${designationname} at ${companyname}</span>
                         </p>
                         <table border="0" width="100" cellpadding="0" cellspacing="0" class="x_MsoNormalTable"
                             style="width:75.0pt">
                             <tbody>
                                 <tr>
-                                    <td style="padding:3.75pt 3.75pt 0in 0in">
+                                    <td style="padding:3.75pt 3.75pt 0in 0in;">
                                         <p class="x_MsoNormal"><a href="${linkedinicon}" target="_blank"
                                                 rel="noopener noreferrer" data-auth="NotApplicable" data-linkindex="0"
-                                                data-ogsc="" style="color: rgb(228, 159, 255) !important;"><span
+                                                data-ogsc="" style="color: rgb(228, 159, 255) !important; display: ${linkedinicon?`block`:`none`}"><span
                                                     style="font-size: 13.5pt; font-family: Times; color: rgb(222, 152, 255) !important; text-decoration: none;"
                                                     data-ogsc="blue"><img id="linkedinid" naturalheight="0" naturalwidth="0"
                                                         src="https://img.icons8.com/material-rounded/50/000000/linkedin--v1.png"
-                                                        border="0" style="width: 0.25in; height: 0.25in;"></span></a><span
+                                                        border="0" style="width: 0.25in; height: 0.25in; display: ${linkedinicon?`block`:`none`}"></span></a><span
                                                 style="font-size: 13.5pt; font-family: Times; color: rgb(255, 255, 255) !important;"
                                                 data-ogsc="black"></span></p>
                                     </td>
@@ -174,7 +177,7 @@ function oneworld(id) {
                                                     style="font-size: 13.5pt; font-family: Times; color: rgb(222, 152, 255) !important; text-decoration: none;"
                                                     data-ogsc="blue"><img id="twitterid" naturalheight="0" naturalwidth="0"
                                                         src="https://img.icons8.com/material-rounded/50/000000/twitter.png"
-                                                        border="0" style="width: 0.25in; height: 0.25in;"></span></a><span
+                                                        border="0" style="width: 0.25in; height: 0.25in; display: ${twittericon?`block`:`none`}"></span></a><span
                                                 style="font-size: 13.5pt; font-family: Times; color: rgb(255, 255, 255) !important;"
                                                 data-ogsc="black"></span></p>
                                     </td>
@@ -186,29 +189,29 @@ function oneworld(id) {
                                                     style="font-size: 13.5pt; font-family: Times; color: rgb(222, 152, 255) !important; text-decoration: none;"
                                                     data-ogsc="blue"><img id="facebookid" naturalheight="0" naturalwidth="0"
                                                         src="https://img.icons8.com/material-rounded/50/000000/facebook.png"
-                                                        border="0" style="width: 0.25in; height: 0.25in;"></span></a><span
+                                                        border="0" style="width: 0.25in; height: 0.25in; display: ${facebookicon?`block`:`none`}"></span></a><span
                                                 style="font-size: 13.5pt; font-family: Times; color: rgb(255, 255, 255) !important;"
                                                 data-ogsc="black"></span></p>
                                     </td>
                                     <td style="padding:3.75pt 3.75pt 0in 0in">
                                         <p class="x_MsoNormal"><a href="${youtubeicon}" target="_blank"
                                                 rel="noopener noreferrer" data-auth="NotApplicable" data-linkindex="1"
-                                                data-ogsc="" style="color: rgb(228, 159, 255) !important;"><span
+                                                data-ogsc="" style="color: rgb(228, 159, 255) !important; display: ${youtubeicon?`block`:`none`}"><span
                                                     style="font-size: 13.5pt; font-family: Times; color: rgb(222, 152, 255) !important; text-decoration: none;"
                                                     data-ogsc="blue"><img id="youtubeid" naturalheight="0" naturalwidth="0"
                                                         src="https://img.icons8.com/material-rounded/50/000000/youtube-play.png"
-                                                        border="0" style="width: 0.25in; height: 0.25in;"></span></a><span
+                                                        border="0" style="width: 0.25in; height: 0.25in; display:${youtubeicon?`block`:`none`}"></span></a><span
                                                 style="font-size: 13.5pt; font-family: Times; color: rgb(255, 255, 255) !important;"
                                                 data-ogsc="black"></span></p>
                                     </td>
                                     <td style="padding:3.75pt 3.75pt 0in 0in">
                                         <p class="x_MsoNormal"><a href="${whatsappicon}" target="_blank"
                                                 rel="noopener noreferrer" data-auth="NotApplicable" data-linkindex="1"
-                                                data-ogsc="" style="color: rgb(228, 159, 255) !important;"><span
+                                                data-ogsc="" style="color: rgb(228, 159, 255) !important; display: ${whatsappicon?`block`:`none`}"><span
                                                     style="font-size: 13.5pt; font-family: Times; color: rgb(222, 152, 255) !important; text-decoration: none;"
                                                     data-ogsc="blue"><img id="whatsappid" naturalheight="0" naturalwidth="0"
                                                         src="https://img.icons8.com/material-rounded/40/000000/whatsapp.png"
-                                                        border="0" style="width: 0.25in; height: 0.25in;"></span></a><span
+                                                        border="0" style="width: 0.25in; height: 0.25in; display:${whatsappicon?`block`:`none`}"></span></a><span
                                                 style="font-size: 13.5pt; font-family: Times; color: rgb(255, 255, 255) !important;"
                                                 data-ogsc="black"></span></p>
                                     </td>
@@ -233,10 +236,7 @@ function oneworld(id) {
                 style="font-size:8.0pt"> <a href="${websitename}" target="_blank" rel="noopener noreferrer"
                     data-auth="NotApplicable" data-linkindex="6" data-ogsc=""
                     style="color: rgb(228, 159, 255) !important;"><span style="color: rgb(138, 184, 255) !important;"
-                        data-ogsc="rgb(5, 99, 193)">${websitename}</span></a> &nbsp;<b><span
-                        style="color: rgb(255, 169, 59) !important;" data-ogsc="rgb(225, 127, 0)">Address</span>:</b> 701
-                Brazos
-                St., Austin, TX 78701</span></p>
+                        data-ogsc="rgb(5, 99, 193)">${websitename}</span></a> &nbsp;</p>
     </div>`
     } else if (id==2){
         bigdiv.innerHTML = `            <div id="two" class="o-signature-preview sample two tab-pane">
@@ -256,29 +256,29 @@ function oneworld(id) {
                                     <tr>
                                         <td style="margin: 0.1px;padding: 4px 0 0 0;"><a target="_blank"
                                                 class="social_link  facebook" href="${facebookicon}"
-                                                style="display: block;border-radius: 15%;width:22px;height:22px;text-align: center;line-height:1; background-color: #854416;"><img
+                                                style="border-radius: 15%;width:22px;height:22px;text-align: center;line-height:1; background-color: #854416; display: ${facebookicon?`block`:`none`}"><img
                                                 src="https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/facebook-icon-2x.png"
                                                 alt="facebook" color="#6A78D1" height="24"
                                                 class="sc-bRBYWo ccSRck"
-                                                style="background-color: #ff7f00; max-width: 135px; display: block;"></a></td>
+                                                style="background-color: #ff7f00; max-width: 135px; display:${facebookicon?`block`:`none`};"></a></td>
                                     </tr>
                                     <tr>
                                         <td style="margin: 0.1px;padding: 4px 0 0 0;"><a target="_blank"
                                                 class="social_link  twitter" href="${twittericon}"
-                                                style="display: block;border-radius: 15%;width:22px;height:22px;text-align: center;line-height:1; background-color: #854416;"><img
+                                                style="border-radius: 15%;width:22px;height:22px;text-align: center;line-height:1; background-color: #854416; display: ${twittericon?`block`:`none`}"><img
                                                 src="https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/twitter-icon-2x.png"
                                                 alt="twitter" color="#6A78D1" height="24"
                                                 class="sc-bRBYWo ccSRck"
-                                                style="background-color: #ff7f00; max-width: 135px; display: block;"></a></td>
+                                                style="background-color: #ff7f00; max-width: 135px; display:${twittericon?`block`:`none`};"></a></td>
                                     </tr>
                                     <tr>
                                         <td style="margin: 0.1px;padding: 4px 0 0 0;"><a target="_blank"
                                                 class="social_link  linkedin" href="${linkedinicon}"
-                                                style="display: block;border-radius: 15%;width:22px;height:22px;text-align: center;line-height:1; background-color: #854416;"><img
+                                                style=" display: ${linkedinicon?`block`:`none`};border-radius: 15%;width:22px;height:22px;text-align: center;line-height:1; background-color: #854416;"><img
                                                 src="https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/linkedin-icon-2x.png"
                                                 alt="linkedin" color="#6A78D1" height="24"
                                                 class="sc-bRBYWo ccSRck"
-                                                style="background-color: #ff7f00; max-width: 135px; display: block;"></a></td>
+                                                style="background-color: #ff7f00; max-width: 135px; display:${linkedinicon?`block`:`none`};"></a></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -472,6 +472,16 @@ function oneworld(id) {
                                                                                                         </a>
                                                                                                     </td>
                                                                                                 </tr>
+                                                                                                <tr>
+                                                                                                <p class="pt-2">
+                                                                                                <a href="${linkedinicon}" style="visibility: ${linkedinicon?``:`hidden`}"><i class="fab fa-linkedin" style="visibility: ${linkedinicon?``:`hidden`}"></i></a>
+                                                                                                <a href="${twittericon}" style="visibility: ${twittericon?``:`hidden`}"><i class="fab fa-twitter-square" style="visibility: ${twittericon?``:`hidden`}"></i></a>
+                                                                                                <a href="${facebookicon}" style="visibility: ${facebookicon?``:`hidden`}"><i class="fab fa-facebook-square" style="visibility: ${facebookicon?``:`hidden`}"></i></a>
+                                                                                                <a href="${githubicon}" style="visibility: ${githubicon?``:`hidden`}"><i class="fab fa-github-square" style="visibility: ${githubicon?``:`hidden`}"></i></a>
+                                                                                                <a href="${youtubeicon}" style="visibility: ${youtubeicon?``:`hidden`}"><i class="fab fa-youtube" style="visibility: ${youtubeicon?``:`hidden`}"></i></a>
+                                                                                                <a href="${instagramicon}" style="visibility: ${instagramicon?``:`hidden`}"><i class="fab fa-instagram-square" style="visibility: ${instagramicon?``:`hidden`}"></i></a>
+                                                                                                </p>
+                                                                                                </tr>
                                                                                             </tbody>
                                                                                         </table>
                                                                                     </td>
@@ -660,33 +670,33 @@ function oneworld(id) {
                                             <tr style="text-align: right;">
                                                 <td><a href="${facebookicon}" color="#6A78D1"
                                                         class="sc-hzDkRC kpsoyz"
-                                                        style="display: inline-block; padding: 0px; background-color: rgb(106, 120, 209);"><img
+                                                        style="padding: 0px; background-color: rgb(106, 120, 209); display: ${facebookicon?`block`:`none`}"><img
                                                             src="https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/facebook-icon-2x.png"
                                                             alt="facebook" color="#6A78D1" height="24"
                                                             class="sc-bRBYWo ccSRck"
-                                                            style="background-color: rgb(106, 120, 209); max-width: 135px; display: block;"></a>
+                                                            style="background-color: rgb(106, 120, 209); max-width: 135px; display:${facebookicon?`block`:`none`}"></a>
                                                 </td>
                                                 <td width="5">
                                                     <div></div>
                                                 </td>
                                                 <td><a href="${twittericon}" color="#6A78D1"
                                                         class="sc-hzDkRC kpsoyz"
-                                                        style="display: inline-block; padding: 0px; background-color: rgb(106, 120, 209);"><img
+                                                        style=" display: ${twittericon?`block`:`none`}; padding: 0px; background-color: rgb(106, 120, 209);"><img
                                                             src="https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/twitter-icon-2x.png"
                                                             alt="twitter" color="#6A78D1" height="24"
                                                             class="sc-bRBYWo ccSRck"
-                                                            style="background-color: rgb(106, 120, 209); max-width: 135px; display: block;"></a>
+                                                            style="background-color: rgb(106, 120, 209); max-width: 135px; display:${twittericon?`block`:`none`};"></a>
                                                 </td>
                                                 <td width="5">
                                                     <div></div>
                                                 </td>
-                                                <td><a href="https://www.linkedin.com/josh-smith" color="#6A78D1"
+                                                <td><a href="${linkedinicon}" color="#6A78D1"
                                                         class="sc-hzDkRC kpsoyz"
-                                                        style="display: inline-block; padding: 0px; background-color: rgb(106, 120, 209);"><img
+                                                        style=" display: ${linkedinicon?`block`:`none`}; padding: 0px; background-color: rgb(106, 120, 209);"><img
                                                             src="https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/linkedin-icon-2x.png"
                                                             alt="linkedin" color="#6A78D1" height="24"
                                                             class="sc-bRBYWo ccSRck"
-                                                            style="background-color: rgb(106, 120, 209); max-width: 135px; display: block;"></a>
+                                                            style="background-color: rgb(106, 120, 209); max-width: 135px; display:${linkedinicon?`block`:`none`};"></a>
                                                 </td>
                                                 <td width="5">
                                                     <div></div>
