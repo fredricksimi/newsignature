@@ -67,7 +67,30 @@
               <div class="card-body">
                 <div class="tab-content" id="myTabContent">
                   <div class="tab-pane fade show active" id="tabs-icons-text-1" role="tabpanel" aria-labelledby="tabs-icons-text-1-tab">
+                    <form method="POST" enctype="multipart/form-data" action="{% url 'signature:home' %}">
+                      {% csrf_token %}
                       <div class="form-group">
+                        <input id="full_name" type="text" name="full_name" class="form-control form-control-alternative" placeholder="Full Name" value="{{sigtool.full_name}}" max_length="100" required>
+                      </div>
+                      <div class="form-group">
+                        <input id="company" type="text" name="company" class="form-control form-control-alternative" placeholder="Company" max_length="100" required>
+                      </div>
+                      <div class="form-group">
+                        <input id="designation" type="text" name="designation" class="form-control form-control-alternative" placeholder="Designation" max_length="100" required>
+                      </div>
+                      <div class="form-group">
+                        <input id="department" type="text" name="department" class="form-control form-control-alternative" placeholder="Department" max_length="100" required>
+                      </div>
+                      <div class="form-group">
+                        <input id="phone" type="text" name="phone" class="form-control form-control-alternative" placeholder="Phone" max_length="100" required>
+                      </div>
+                      <div class="form-group">
+                        <input id="email" type="text" name="email" class="form-control form-control-alternative" placeholder="Email" max_length="100" required>
+                      </div>
+                      <div class="form-group">
+                        <input id="website" type="text" name="website" class="form-control form-control-alternative" placeholder="Website" max_length="100" required>
+                      </div>
+                      <!-- <div class="form-group">
                           <input type="text" placeholder="names" id="form_names" class="form-control form-control-alternative" value="{{sigtool.full_name}}" {{readonlyvar}}/>
                       </div>
                       <div class="form-group">
@@ -87,10 +110,32 @@
                         </div>
                         <div class="form-group">
                           <input type="text" placeholder="Website" id="form_website" class="form-control form-control-alternative" value="{{sigtool.website}}"  {{readonlyvar}}/>
-                        </div>
+                        </div> -->
+                    <!-- </form> -->
                   </div>
                   <div class="tab-pane fade" id="tabs-icons-text-2" role="tabpanel" aria-labelledby="tabs-icons-text-2-tab">
-                      <div class="form-group">
+                    <div class="form-group">
+                      <input id="facebook" type="text" name="Facebook" class="form-control form-control-alternative" placeholder="https://facebook.com/johnwick" max_length="100">
+                    </div>
+                    <div class="form-group">
+                      <input id="linkedin" type="text" name="LinkedIn" class="form-control form-control-alternative" placeholder="https://linkedin.com/johnwick" max_length="100">
+                    </div>
+                    <div class="form-group">
+                      <input id="twitter" type="text" name="Twitter" class="form-control form-control-alternative" placeholder="https://twitter.com/johnwick" max_length="100">
+                    </div>
+                    <div class="form-group">
+                      <input id="github" type="text" name="GitHub" class="form-control form-control-alternative" placeholder="https://github.com/johnwick" max_length="100">
+                    </div>
+                    <div class="form-group">
+                      <input id="instagram" type="text" name="Instagram" class="form-control form-control-alternative" placeholder="https://instagram.com/johnwick" max_length="100">
+                    </div>
+                    <div class="form-group">
+                      <input id="whatsapp" type="text" name="WhatsApp" class="form-control form-control-alternative" placeholder="https://wa.me/8937453" max_length="100">
+                    </div>
+                    <div class="form-group">
+                      <input id="youtube" type="text" name="YouTube" class="form-control form-control-alternative" placeholder="https://youtube.com/johnwick" max_length="100">
+                    </div>
+                      <!-- <div class="form-group">
                           <input type="text" id="form_linkedin" class="form-control form-control-alternative" id="linkedin" aria-describedby="linkedin"
                               placeholder="https://linkedin.com/johnwick">
                       </div>
@@ -117,17 +162,25 @@
                       <div class="form-group">
                           <input type="text" id="form_whatsapp" class="form-control form-control-alternative" id="whatsapp" aria-describedby="whatsapp"
                               placeholder="https://whatsapp.com/johnwick">
-                      </div>
+                      </div> -->
+                    <!-- </form> -->
                   </div>
                   <div class="tab-pane fade" id="tabs-icons-text-3" role="tabpanel" aria-labelledby="tabs-icons-text-3-tab">
                     <br>
-                        <input type="file" name="img"/>
-                        <br>
+                    <!-- <form method = "POST">
+                      {% csrf_token %} -->
+                      <div class="form-group">
+                        <input id="image" type="file" name="image" class="form-control form-control-alternative">
+                      </div>
+                    
+                    <!-- </form> -->
+                        <!-- <input type="file" name="img"/> -->
+                        <!-- <br>
                         <button id="submit" type="submit">Upload</button>
                         <h1>Still testing this feature... </h1>
                         <div id="photo">
                             <img src="{{ photo.image.url }}">
-                        </div>
+                        </div> -->
                   </div>
                   <div class="tab-pane fade" id="tabs-icons-text-4" role="tabpanel" aria-labelledby="tabs-icons-text-3-tab">
                       <div class="paymentWrap">
@@ -154,7 +207,8 @@
                 </div>
               </div>
             </div>
-            
+            <input type="submit" class="btn btn-primary" value="submit">
+          </form> <!------------THIS WAS ADDED RECENTLY 22 JUN 11:25 ----------->
           </div>
             
           
