@@ -14,15 +14,15 @@ class SignatureTool(models.Model):
     phone = models.CharField(max_length=50)
     email = models.CharField(max_length=50)
     website = models.CharField(max_length=50)
-    image = models.ImageField(upload_to='media_pics/', blank=True, default='default.jpg')
+    image = models.ImageField(upload_to='media_pics/', blank=True, null=True, default='default.jpg')
 
-    facebook = models.CharField(max_length=50, blank=True, null=True)
-    linkedin = models.CharField(max_length=50, blank=True, null=True)
-    twitter = models.CharField(max_length=50, blank=True, null=True)
-    github = models.CharField(max_length=50, blank=True, null=True)
-    instagram = models.CharField(max_length=50, blank=True, null=True)
-    whatsapp = models.CharField(max_length=50, blank=True, null=True)
-    youtube = models.CharField(max_length=50, blank=True, null=True)
+    facebook = models.CharField(max_length=50, blank=True, null=True, default='')
+    linkedin = models.CharField(max_length=50, blank=True, null=True, default='')
+    twitter = models.CharField(max_length=50, blank=True, null=True, default='')
+    github = models.CharField(max_length=50, blank=True, null=True, default='')
+    instagram = models.CharField(max_length=50, blank=True, null=True, default='')
+    whatsapp = models.CharField(max_length=50, blank=True, null=True, default='')
+    youtube = models.CharField(max_length=50, blank=True, null=True, default='')
 
     class Meta:
         verbose_name = 'SignatureTool'

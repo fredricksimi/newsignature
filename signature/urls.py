@@ -4,5 +4,6 @@ from . import views
 app_name = "signature"
 
 urlpatterns = [
-    path('', views.home_view, name="home")
+    path('', views.home_view, name="home"),
+    path('image', views.simple_upload, name='image'),
 ]

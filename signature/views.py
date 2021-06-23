@@ -14,13 +14,12 @@ def home_view(request):
     if sigtool.full_name != '':
         readonlyvar = 'readonly'
 
-    if request.method == 'POST' and 'userimage' in request.FILES:
+    if request.method == 'POST':
         full_name = request.POST['full_name']
         company = request.POST['company']
         designation = request.POST['designation']
         department = request.POST['department']
         phone = request.POST['phone']
-        image = request.FILES['userimage']
         email = request.POST['email']
         website = request.POST['website']
 
@@ -38,7 +37,6 @@ def home_view(request):
         sigtool.designation = designation
         sigtool.department = department
         sigtool.phone = phone
-        sigtool.image = image
         sigtool.email = email
         sigtool.website = website
         sigtool.facebook = facebook
@@ -57,13 +55,12 @@ def home_view(request):
     }
     return render(request, 'signature/index.html', context)
 
-# @login_required
-# def simple_upload(request):
-#     if request.method == 'POST' and request.FILES['myfile']:
-#         myfile = request.FILES['image']
-#         fs = FileSystemStorage()
-#         filename = fs.save(myfile.name, myfile)
-#         # uploaded_file_url = fs.url(filename)
-#         # return render(request, 'signature/index.html')
-#     return render(request, 'signature/index.html')
-    
+@login_required
+def simple_upload(request):
+    sigtool = SignatureTool.objects.get(user_id=request.user.id)
+    if request.method == 'POST' and 'userimage' in request.FILES:
+        image = request.FILES['userimage']
+        sigtool.image = image
+        sigtool.save()
+        return redirect('signature:home')
+    return render(request, 'signature/index.html')

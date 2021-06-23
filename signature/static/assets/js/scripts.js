@@ -13,7 +13,9 @@ var youtubeicon = document.getElementById('form_youtube').value
 var whatsappicon = document.getElementById('form_whatsapp').value
 var githubicon = document.getElementById('form_github').value
 var instagramicon = document.getElementById('form_instagram').value
+var imageobj = document.getElementById('imagename').value
 
+console.log(imageobj)
 
 $('#form_names').on('input', function() {
     $('#names').text(this.value)
@@ -144,7 +146,7 @@ function oneworld(id) {
                 <tr>
                     <td valign="top" width="60" style="width:45.0pt; padding:0in 5.4pt 0in 5.4pt">
                         <p class="x_MsoNormal"><span style="font-size:8.0pt"><img
-                                    src="https://theofficeanalytics.files.wordpress.com/2017/11/dwight.jpeg?w=1200"
+                                    src="${imageobj}"
                                     style="height:64px; width: 64px; border-radius:10px"></span></p>
                     </td>
                     <td valign="top" width="250" style="width:187.45pt; padding:0in 5.4pt 0in 5.4pt">
@@ -247,7 +249,7 @@ function oneworld(id) {
                         <td valign="middle" width="133" style="padding: 0px 15px 0px 0px; vertical-align: middle;"><img
                                 alt="created with MySignature.io" width="133"
                                 style="width:133px;max-width:133px;moz-border-radius:30%;khtml-border-radius:30%;o-border-radius:30%;webkit-border-radius:30%;ms-border-radius:30%;border-radius:30%;"
-                                src="https://theofficeanalytics.files.wordpress.com/2017/11/dwight.jpeg?w=1200">
+                                src="${imageobj}">
                         </td>
                         <td valign="middle" width="37"
                             style="vertical-align: middle; padding: 0px 0px 0px 0px; font-family: Arial;">
@@ -289,7 +291,7 @@ function oneworld(id) {
                                 <tr>
                                     <td
                                         style="margin: 0.1px; padding-bottom: 1px; font: 600 1.2em &quot;Lucida Sans Unicode&quot;, &quot;Lucida Grande&quot;, sans-serif; color: rgb(133, 68, 22);" id="names">
-                                        ${fullname}
+                                        ${fullname} {{signature.image.url}}
                                     </td>
                                 </tr>
                                 <tr>
@@ -351,7 +353,7 @@ function oneworld(id) {
                                                 <tr>
                                                     <td>
                                                         <img
-                                                            src="https://d36urhup7zbd7q.cloudfront.net/07018871-3bf0-473c-97fe-022fe1555691/dwight500x500.format_png.resize_200x.png#logo"
+                                                            src="${imageobj}"
                                                             height="94"
                                                             width="94"
                                                             style="
@@ -531,7 +533,7 @@ function oneworld(id) {
                             <tr>
                                 <td width="150" style="vertical-align: middle;"><span class="sc-kgAjT cuzzPp"
                                         style="margin-right: 20px; display: block;"><img
-                                            src="https://d36urhup7zbd7q.cloudfront.net/07018871-3bf0-473c-97fe-022fe1555691/dwight500x500.format_png.resize_200x.png#logo"
+                                            src="${imageobj}"
                                             role="presentation" width="130" class="sc-cHGsZl bHiaRe"
                                             style="max-width: 130px;border-radius: 50%;"></span></td>
                                 <td style="vertical-align: middle;">

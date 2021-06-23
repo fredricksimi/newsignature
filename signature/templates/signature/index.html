@@ -22,7 +22,6 @@
         <div class="col px-0">
           <div class="row align-items-center justify-content-center">
             <div class="col-lg-6 text-center">
-              <!-- <img src="./assets/img/brand/logo.jpeg" style="width: 200px;" class="img-fluid"> -->
               <h1 class="mb-0 text-white">Create an Amazing</h1>
               <h1 class="mb-0 text-white">Email Signature.</h1>
               <div class="btn-wrapper mt-5">
@@ -53,9 +52,6 @@
                 </li>
                 <li class="nav-item">
                   <a class="nav-link mb-sm-3 mb-md-0" id="tabs-icons-text-2-tab" data-toggle="tab" href="#tabs-icons-text-2" role="tab" aria-controls="tabs-icons-text-2" aria-selected="false">Socials</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link mb-sm-3 mb-md-0" id="tabs-icons-text-3-tab" data-toggle="tab" href="#tabs-icons-text-3" role="tab" aria-controls="tabs-icons-text-3" aria-selected="false">Images</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link mb-sm-3 mb-md-0" id="tabs-icons-text-3-tab" data-toggle="tab" href="#tabs-icons-text-4" role="tab" aria-controls="tabs-icons-text-4" aria-selected="false">Templates</a>
@@ -90,28 +86,6 @@
                       <div class="form-group">
                         <input  type="text" id="form_website" name="website" class="form-control form-control-alternative" placeholder="Website" value="{{sigtool.website}}" max_length="100" required>
                       </div>
-                      <!-- <div class="form-group">
-                          <input type="text" placeholder="names" id="form_names" class="form-control form-control-alternative" value="{{sigtool.full_name}}" {{readonlyvar}}/>
-                      </div>
-                      <div class="form-group">
-                          <input type="text" placeholder="company" id="form_company" class="form-control form-control-alternative" value="{{sigtool.company}}"  {{readonlyvar}}/>
-                      </div>
-                      <div class="form-group">
-                          <input type="text" placeholder="Designation" id="form_designation" class="form-control form-control-alternative" value="{{sigtool.designation}}"  {{readonlyvar}}/>
-                        </div>
-                        <div class="form-group">
-                          <input type="text" placeholder="Department" id="form_department" class="form-control form-control-alternative" value="{{sigtool.department}}"  {{readonlyvar}}/>
-                        </div>
-                        <div class="form-group">
-                          <input type="text" placeholder="Phone" id="form_phone" class="form-control form-control-alternative" value="{{sigtool.phone}}"  {{readonlyvar}}/>
-                        </div>
-                        <div class="form-group">
-                          <input type="text" placeholder="Email" id="form_email" class="form-control form-control-alternative" value="{{sigtool.email}}"   {{readonlyvar}}/>
-                        </div>
-                        <div class="form-group">
-                          <input type="text" placeholder="Website" id="form_website" class="form-control form-control-alternative" value="{{sigtool.website}}"  {{readonlyvar}}/>
-                        </div> -->
-                    <!-- </form> -->
                   </div>
                   <div class="tab-pane fade" id="tabs-icons-text-2" role="tabpanel" aria-labelledby="tabs-icons-text-2-tab">
                     <div class="form-group">
@@ -136,12 +110,7 @@
                       <input id="form_youtube" type="text" name="YouTube" class="form-control form-control-alternative" value="{{sigtool.youtube}}" placeholder="Your YouTube Channel Link" max_length="100">
                     </div>
                   </div>
-                  <div class="tab-pane fade" id="tabs-icons-text-3" role="tabpanel" aria-labelledby="tabs-icons-text-3-tab">
-                    <br>
-                      <div class="form-group">
-                        <input id="image" type="file" name="userimage" class="form-control form-control-alternative">
-                      </div>
-                  </div>
+                  
                   <div class="tab-pane fade" id="tabs-icons-text-4" role="tabpanel" aria-labelledby="tabs-icons-text-3-tab">
                       <div class="paymentWrap">
                           <div class="btn-group paymentBtnGroup btn-group-justified row" data-toggle="buttons">
@@ -352,65 +321,65 @@
                                                                   <tr style="text-align: right;">
                                                                       <td><a href="{{sigtool.facebook}}" color="#6A78D1"
                                                                               class="sc-hzDkRC kpsoyz"
-                                                                              style="padding: 0px;  visibility:{% if sigtool.facebook %}block{% else %}hidden {% endif %}"><img
+                                                                              style="padding: 0px;  visibility:{% if sigtool.facebook %}visible{% else %}hidden {% endif %}"><img
                                                                                   src="https://img.icons8.com/android/24/000000/facebook-new.png"
                                                                                   alt="facebook" color="#6A78D1" height="24"
                                                                                   class="sc-bRBYWo ccSRck"
-                                                                                  style=" max-width: 135px; visibility:{% if sigtool.facebook %}block{% else %}hidden {% endif %};"></a>
+                                                                                  style=" max-width: 135px; visibility:{% if sigtool.facebook %}visible{% else %}hidden {% endif %};"></a>
                                                                       </td>
                                                                       <td width="5">
                                                                           <div></div>
                                                                       </td>
                                                                       <td><a href="{{sigtool.twitter}}" color="#6A78D1"
                                                                               class="sc-hzDkRC kpsoyz"
-                                                                              style=" visibility:{% if sigtool.twitter %}block{% else %}hidden {% endif %}; padding: 0px; "><img
+                                                                              style=" visibility:{% if sigtool.twitter %}visible{% else %}hidden {% endif %}; padding: 0px; "><img
                                                                                   src="https://img.icons8.com/android/24/000000/twitter.png"
                                                                                   alt="twitter" color="#6A78D1" height="24"
                                                                                   class="sc-bRBYWo ccSRck"
-                                                                                  style=" max-width: 135px;visibility:{% if sigtool.twitter %}block{% else %}hidden {% endif %};"></a>
+                                                                                  style=" max-width: 135px;visibility:{% if sigtool.twitter %}visible{% else %}hidden {% endif %};"></a>
                                                                       </td>
                                                                       <td width="5">
                                                                           <div></div>
                                                                       </td>
                                                                       <td><a href="{{sigtool.linkedin}}"
                                                                               color="#6A78D1" class="sc-hzDkRC kpsoyz"
-                                                                              style=" visibility:{% if sigtool.linkedin %}block{% else %}hidden {% endif %}; padding: 0px; "><img
+                                                                              style=" visibility:{% if sigtool.linkedin %}visible{% else %}hidden {% endif %}; padding: 0px; "><img
                                                                                   src="https://img.icons8.com/android/24/000000/linkedin.png"
                                                                                   alt="linkedin" color="#6A78D1" height="24"
                                                                                   class="sc-bRBYWo ccSRck"
-                                                                                  style=" max-width: 135px; visibility:{% if sigtool.linkedin %}block{% else %}hidden {% endif %};"></a>
+                                                                                  style="max-width: 135px; visibility:{% if sigtool.linkedin %}visible{% else %}hidden {% endif %};"></a>
                                                                       </td>
                                                                       <td><a href="{{sigtool.instagram}}"
                                                                         color="#6A78D1" class="sc-hzDkRC kpsoyz"
-                                                                        style=" visibility:{% if sigtool.linkedin %}block{% else %}hidden {% endif %}; padding: 0px; "><img
+                                                                        style=" visibility:{% if sigtool.linkedin %}visible{% else %}hidden {% endif %}; padding: 0px; "><img
                                                                             src="https://img.icons8.com/material-rounded/24/000000/instagram-new.png"
                                                                             alt="linkedin" color="#6A78D1" height="24"
                                                                             class="sc-bRBYWo ccSRck"
-                                                                            style=" max-width: 135px; visibility:{% if sigtool.instagram %}block{% else %}hidden {% endif %};"></a>
+                                                                            style=" max-width: 135px; visibility:{% if sigtool.instagram %}visible{% else %}hidden {% endif %};"></a>
                                                                       </td>
                                                                       <td><a href="{{sigtool.youtube}}"
                                                                         color="#6A78D1" class="sc-hzDkRC kpsoyz"
-                                                                        style=" visibility:{% if sigtool.linkedin %}block{% else %}hidden {% endif %}; padding: 0px; "><img
+                                                                        style=" visibility:{% if sigtool.linkedin %}visible{% else %}hidden {% endif %}; padding: 0px; "><img
                                                                             src="https://img.icons8.com/material-rounded/24/000000/youtube-play.png"
                                                                             alt="linkedin" color="#6A78D1" height="24"
                                                                             class="sc-bRBYWo ccSRck"
-                                                                            style=" max-width: 135px; visibility:{% if sigtool.youtube %}block{% else %}hidden {% endif %};"></a>
+                                                                            style=" max-width: 135px; visibility:{% if sigtool.youtube %}visible{% else %}hidden {% endif %};"></a>
                                                                       </td>
                                                                       <td><a href="{{sigtool.whatsapp}}"
                                                                         color="#6A78D1" class="sc-hzDkRC kpsoyz"
-                                                                        style=" visibility:{% if sigtool.linkedin %}block{% else %}hidden {% endif %}; padding: 0px; "><img
+                                                                        style=" visibility:{% if sigtool.linkedin %}visible{% else %}hidden {% endif %}; padding: 0px; "><img
                                                                             src="https://img.icons8.com/material-rounded/24/000000/whatsapp.png"
                                                                             alt="linkedin" color="#6A78D1" height="24"
                                                                             class="sc-bRBYWo ccSRck"
-                                                                            style=" max-width: 135px; visibility:{% if sigtool.whatsapp %}block{% else %}hidden {% endif %};"></a>
+                                                                            style=" max-width: 135px; visibility:{% if sigtool.whatsapp %}visible{% else %}hidden {% endif %};"></a>
                                                                       </td>
                                                                       <td><a href="{{sigtool.github}}"
                                                                         color="#6A78D1" class="sc-hzDkRC kpsoyz"
-                                                                        style=" visibility:{% if sigtool.linkedin %}block{% else %}hidden {% endif %}; padding: 0px; "><img
+                                                                        style=" visibility:{% if sigtool.linkedin %}visible{% else %}hidden {% endif %}; padding: 0px; "><img
                                                                             src="https://img.icons8.com/fluent-systems-filled/48/000000/github.png"
                                                                             alt="linkedin" color="#6A78D1" height="24"
                                                                             class="sc-bRBYWo ccSRck"
-                                                                            style=" max-width: 135px; visibility:{% if sigtool.github %}block{% else %}hidden {% endif %};"></a>
+                                                                            style=" max-width: 135px; visibility:{% if sigtool.github %}visible{% else %}hidden {% endif %};"></a>
                                                                       </td>
                                                                       <td width="5">
                                                                           <div></div>
@@ -427,20 +396,30 @@
                               </tbody>
                           </table>
                       </div>
-                      <!-- <p><button class="samplecopybtn">Copy</button></p> -->
                   </div>
               </div>
           </div>
           </div>
-          <button type="button" class="btn btn-default btn-round samplecopybtn">Copy</button>
+          <br><br>
+          <form action="{% url 'signature:image' %}" enctype="multipart/form-data" method="post">
+            {% csrf_token %}
+            <div class="form-group">
+              <input id="image" type="file" name="userimage" class="form-control form-control-alternative">
+            </div>
+            <input type="submit" value="Upload image" class="btn btn-primary">
+          </form>
+          <br>
+          <center><button type="button" class="btn btn-default btn-round samplecopybtn">Copy this Signature</button></center>
           </div>
-           
+          <input type="hidden" id="imagename" name="iname" value="{{sigtool.image.url}}">
+          
+          
         </div>
         <div class="row row-grid justify-content-between">
   </div>
 <footer class="footer has-cards">
   <div class="container">
-   <hr>
+  <hr>
     <div class="row align-items-center justify-content-md-between">
       <div class="col-md-6">
         <div class="copyright">
