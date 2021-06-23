@@ -291,7 +291,7 @@ function oneworld(id) {
                                 <tr>
                                     <td
                                         style="margin: 0.1px; padding-bottom: 1px; font: 600 1.2em &quot;Lucida Sans Unicode&quot;, &quot;Lucida Grande&quot;, sans-serif; color: rgb(133, 68, 22);" id="names">
-                                        ${fullname} {{signature.image.url}}
+                                        ${fullname}
                                     </td>
                                 </tr>
                                 <tr>
