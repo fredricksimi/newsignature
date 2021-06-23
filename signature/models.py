@@ -15,6 +15,7 @@ class SignatureTool(models.Model):
     email = models.CharField(max_length=50)
     website = models.CharField(max_length=50)
     image = models.ImageField(upload_to='media_pics/', blank=True, null=True, default='default.jpg')
+    personalimage = models.CharField(max_length=150 , blank=True, null=True)
 
     facebook = models.CharField(max_length=50, blank=True, null=True, default='')
     linkedin = models.CharField(max_length=50, blank=True, null=True, default='')

@@ -31,6 +31,7 @@ def home_view(request):
         instagram = request.POST['Instagram']
         whatsapp = request.POST['WhatsApp']
         youtube = request.POST['YouTube']
+        personalimage = request.POST['PersonalImage']
 
         sigtool.full_name = full_name
         sigtool.company = company
@@ -39,6 +40,7 @@ def home_view(request):
         sigtool.phone = phone
         sigtool.email = email
         sigtool.website = website
+        sigtool.personalimage = personalimage
         sigtool.facebook = facebook
         sigtool.linkedin = linkedin
         sigtool.twitter = twitter
@@ -55,12 +57,12 @@ def home_view(request):
     }
     return render(request, 'signature/index.html', context)
 
-@login_required
-def simple_upload(request):
-    sigtool = SignatureTool.objects.get(user_id=request.user.id)
-    if request.method == 'POST' and 'userimage' in request.FILES:
-        image = request.FILES['userimage']
-        sigtool.image = image
-        sigtool.save()
-        return redirect('signature:home')
-    return render(request, 'signature/index.html')
+# @login_required
+# def simple_upload(request):
+#     sigtool = SignatureTool.objects.get(user_id=request.user.id)
+#     if request.method == 'POST' and 'userimage' in request.FILES:
+#         image = request.FILES['userimage']
+#         sigtool.image = image
+#         sigtool.save()
+#         return redirect('signature:home')
+#     return render(request, 'signature/index.html')
